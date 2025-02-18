@@ -1,0 +1,16 @@
+services:
+  service-pg:
+    image: bitnami/postgresql
+    ports:
+      - '5433:5432'
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=connect
+
+  service-redis:
+    image: bitnami/redis
+    ports:
+      - '6379:6379'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes

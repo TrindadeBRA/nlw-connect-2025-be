@@ -1,2 +1,4 @@
-# nlw-connect-2025-be
-# nlw-connect-2025-be
+npx drizzle-kit generate - Gera o arquivo de migração
+npx drizzle-kit migrate - Aplica as migrações
+
+
